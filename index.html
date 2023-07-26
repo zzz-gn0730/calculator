@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>calculator</title>
+  <link rel="stylesheet" href="style.css" >
+</head>
+<body>
+  <div class="container">
+    <div>
+      <input type="text" id="display" readonly>
+    </div>
+    <div class="commands">
+      <button class="command flash" onclick="appendNumber(7)">7</button>
+      <button class="command flash" onclick="appendNumber(8)">8</button>
+      <button class="command flash" onclick="appendNumber(9)">9</button>
+      <button class="command flash" onclick="appendOperator('%')">%</button>
+      <button class="command flash" onclick="appendNumber(4)">4</button>
+      <button class="command flash" onclick="appendNumber(5)">5</button>
+      <button class="command flash" onclick="appendNumber(6)">6</button>
+      <button class="command flash" onclick="appendOperator('/')">÷</button>
+      <button class="command flash" onclick="appendNumber(1)">1</button>
+      <button class="command flash" onclick="appendNumber(2)">2</button>
+      <button class="command flash" onclick="appendNumber(3)">3</button>
+      <button class="command flash" onclick="appendOperator('*')">x</button>
+      <button class="command flash" onclick="appendNumber(0)">0</button>
+      <button class="command flash" onclick="appendDecimalPoint()">.</button>
+      <button class="command flash" onclick="showCalculation()">=</button>
+      <button class="command flash" onclick="appendOperator('+')">+</button>
+      <button class="command ac_column flash" onclick="clearDisplay()">AC</button>
+      <button class="command sub_column flash" onclick="appendOperator('-')">-</button>
+    </div>
+    <script src="main.js"></script>
+  </div>
+</body>
+</html>
